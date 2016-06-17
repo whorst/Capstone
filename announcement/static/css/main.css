@@ -1,0 +1,23 @@
+/*This provides all of the CSS that will be used thoughout multiple files*/
+
+.main_text{
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #484848;
+
+}
+
+.title{
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8em;
+  color: #484848;
+
+  padding-bottom: 2%;
+
+}

@@ -1,0 +1,33 @@
+<!--This file includes the bottom border and picture at the top of the page.-->
+
+{% load staticfiles %}
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="static/css/base.css">
+<link rel="stylesheet" href="static/css/main.css">
+
+<div id="wrapper">
+
+  <img id="base_pic" src="static/images/base.png">
+
+  <div id = "choice">
+
+    <a class="main_text">Home</a>
+    <a class="main_text">About Us</a>
+    <a class="main_text">Meet Our Members</a>
+    <a class="main_text">Gallery</a>
+
+  </div>
+</div>
+
+{% block content %}
+
+
+{% endblock %}
+<div id ="bottom">
+
+  <img class="face"  src="static/images/fb.png">
+
+</div>

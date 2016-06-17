@@ -1,0 +1,41 @@
+{% extends 'test_app/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="static/css/home.css">
+<link rel="stylesheet" href="static/css/main.css">
+
+
+
+
+<div class="container">
+
+  <p class="title">Welcome to Student Advocates for Vegetarianism and Veganism!</p>
+  <p class="main_text">Meetings are at 103 East Preston Rd. in Mt. Pleasant</p>
+
+</div>
+
+<div class="container">
+
+  <p class="main_text">Announcements:</p>
+
+  {% for announcement in announcements %}
+
+    <div class="announcement_container">
+
+      <p class="main_text">{{ announcement.title }}</p>
+      <p style="text-align:center;"  class="main_text">{{ announcement.description }}</p>
+
+    </div>
+
+  {% endfor %}
+
+</div>
+
+
+
+{% endblock %}

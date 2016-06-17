@@ -1,0 +1,18 @@
+/*This provides all of the CSS for the home.html file*/
+
+.container{
+
+  padding-top:3%;
+  width:100%;
+  text-align:center;
+
+}
+
+.announcement_container{
+
+  padding-top:2%;
+  width:60%;
+  margin: 0 auto;
+  text-align:center;
+
+}
