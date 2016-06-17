@@ -1,16 +1,23 @@
 /*This provides all of the CSS for the base.html file*/
 
-#wrapper{
-
-  height: 57%;
-  width: 100%;
-
-}
-
 #base_pic{
 
   height:100%;
   width:100%
+
+}
+
+#bottom{
+
+  display: inline-block;
+
+  height: 2.5em;
+  position: static;
+  bottom: 0;
+  width:100%;
+
+  background-color: #484848;
+  margin-top:4%;
 
 }
 
@@ -24,23 +31,6 @@
   text-align:center;
 
 }
-
-#bottom{
-
-  display: inline-block;
-
-  height: 2.5em;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width:100%;
-
-  background-color: #484848;
-  margin-top:4%;
-
-}
-
-
 
 #choice a{
 
@@ -57,5 +47,13 @@
   float:right;
   margin-top:.125%;
   margin-right:.75%;
+
+}
+
+
+#wrapper{
+
+  height: 57%;
+  width: 100%;
 
 }

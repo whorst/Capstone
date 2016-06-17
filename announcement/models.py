@@ -13,3 +13,13 @@ class Announcement(models.Model):
 
     def __str__(self):
         return self.title
+'''
+Test if a unicode character saved to the database is still a unicode character when it's returned.
+Create a new announcement test object that has a unicode character in it. Save that object to the database
+(using save override?) and then grab it from the database and check it agains the original object.
+'''
+
+'''
+Create a Contact Us form that checks if an email address exists.
+https://docs.djangoproject.com/en/dev/ref/forms/fields/
+'''
