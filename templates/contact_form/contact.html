@@ -6,8 +6,28 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-  <link rel="stylesheet" href="{% static "css/main.css" %}">
-  
+  <!-- <link rel="stylesheet" href="{% static "css/main.css" %}"> -->
+  <link rel="stylesheet" href="{% static "css/contact.css" %}">
+
+
+  <form method="post" action="">
+    <!--Prevents attacks from cross site request forgery scipts -->
+    {% csrf_token %}
+      <table>
+        {% for form in contactform %}
+        <tr>
+          {{ form }}
+        </tr>
+        {% endfor %}
+
+        <!-- Fix the above tomorrow -->
+
+      </table>
+    <input type="submit" value="Submit Form"/>
+  </form>
+
+
+
 
 
 {% endblock %}

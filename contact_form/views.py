@@ -1,8 +1,19 @@
 from django.shortcuts import render
+from django.core.urlresolvers import reverse
+from django.http import HttpResponseRedirect
 
+from forms import ContactForm
 # Create your views here.
 
+
 def contact(request):
-    #announcements = Announcement.objects.order_by("-id")[:5]
-    #The above code will return the last five items in the QuerySet as ordered by Primary Key
-    return render(request, "contact_form/contact.html",{})
+    contactform = ContactForm()
+    if request.method == "POST":
+        contactform = ContactForm(request.POST)
+        if contactform.is_valid():
+            message = contactform.save(commit=False)
+            message.save()
+            return HttpResponseRedirect(reverse("contact"))
+        else:
+            contactform = ContactForm()
+    return render(request,"contact_form/contact.html",{"contactform":contactform})
