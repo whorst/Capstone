@@ -11,24 +11,23 @@
 
   display: inline-block;
 
-  height: 2.5em;
-  position: static;
-  bottom: 0;
-  width:100%;
-
-  background-color: #484848;
-  margin-top:4%;
+   background-color: #484848;
+   height: 2.5em;
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 
 }
 
 #choice{
-
-  width:69%;
-  margin:auto;
+  
   background-color:transparent;
   top:28%; left:0; bottom:0; right:0;
-  position:absolute;
   text-align:center;
+
+  display: table-cell;
+  vertical-align: middle;
 
 }
 
@@ -37,7 +36,7 @@
   color: 	#FFFFFF;
   padding-left: 3%;
   padding-right: 3%;
-
+  text-align:center;
   font-size: 1.0em;
 
 }
@@ -55,5 +54,8 @@
 
   height: 57%;
   width: 100%;
+  background-image: url("base.png");
+
+  display: table;
 
 }
