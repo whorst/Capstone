@@ -8,8 +8,7 @@ import re
 
 
 class AnnouncementForm(forms.ModelForm):
-#This class will render the form from our Model and all the necessary fields.
-
+    """This class will render the form from our Model and all the necessary fields."""
 
     class Meta:
 #Meta class is used to contain extra information about the model that would not
@@ -26,8 +25,7 @@ class AnnouncementForm(forms.ModelForm):
 
 
 class AnnouncementAdmin(admin.ModelAdmin):
-#The AdminModelForm class will simply display our Announcement Model's fields on the Admin page, but not the user page.
-
+    """The AdminModelForm class will simply display our Announcement Model's fields on the Admin page, but not the user page."""
     form = AnnouncementForm
 
 

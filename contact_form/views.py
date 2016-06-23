@@ -16,5 +16,5 @@ def contact(request):
             return HttpResponseRedirect(reverse("contact"))
         else:
             print(contactform.errors)
-            
+
     return render(request,"contact_form/contact.html",{"contactform":contactform})
