@@ -1,27 +1,51 @@
-.form_container{
-
-  margin: 0 auto;
-  width: 40%;
-
+.errorlist{
+  color:red;
 }
 
-.outer{
-
+fieldset div div input{
   width:100%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+}
 
+fieldset{
+}
+
+.form_container{
+  margin: 0 auto;
+  width: 30%;
+}
+
+input{
+  background-color: #efefef;
 }
 
 li{
-
   margin-top:7%;
   margin-bottom:7%;
-
 }
 
-.errorlist{
+.outer{
+  width:100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 
-  color:red;
+.spacing{
+  margin-top: 5%;
+}
 
+table{
+  width:100%;
+}
+
+td{
+  padding: 1%;
+}
+
+td input{
+  width:103%;
+}
+
+textarea{
+  background: #efefef;
+  width:100%;
 }

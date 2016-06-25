@@ -7,6 +7,7 @@ class EncodingTestCase(TestCase):
     """Tests that a unicode character that is saved to the database is the same when it's returned from the database."""
 
     def test_encoding_is_proper(self):
+        # test_str = unicode("✄", "utf-8")
         test_str = u"✄"
         name = Contact(first_name=test_str)
         name.save()

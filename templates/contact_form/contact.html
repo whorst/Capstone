@@ -3,43 +3,46 @@
 
 {% block content %}
 
+
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
   <link rel="stylesheet" href="{% static "css/main.css" %}">
   <link rel="stylesheet" href="{% static "css/contact.css" %}">
-
-  <div class="outer">
-    <div class="form_container">
-      <form method="POST" action="">
-        <!--Prevents attacks from cross site request forgery scipts -->
-        {% csrf_token %}
-          <ul>
-              <li>
-                <label = for="first_name">First Name</label>
-                {{ contactform.first_name }}
-              </li>
-              <li>
-                <label = for="last_name">Last Name</label>
-                {{ contactform.last_name }}
-              </li>
-              <li>
-                <label = for="phone_number">Phone Number</label>
-                {{ contactform.phone_number }}
-              </li>
-              <li>
-                <label = for="email">Email</label>
-                {{ contactform.email }}
-                <div style = "padding-top:7%; padding-bottom:7%">{{ contactform.email.errors}}</div>
-              </li>
-              <li>
-                <label = for="message">Message</label>
-                {{ contactform.message }}
-              </li>
-          </ul>
-        <input type="submit" value="Submit Form"/>
-      </form>
-    </div>
+  <div class="container">
+    <p class="title">Contact Us</p>
+    <p class="main_text">Have any questions, comments, or concerns? Fill out the relevant information and we'l get back to you as soon as we can!</p>
   </div>
+    <div class="outer main_text">
+      <div class="form_container">
+        <form method="POST" action="">
+          <!--Prevents attacks from cross site request forgery scipts -->
+          {% csrf_token %}
+
+          <fieldset>
+            <table>
+              <tr>
+                <td> <label = for="first_name">First Name</label> </td>
+                <td> <label = for="last_name">Last Name</label> </td>
+              </tr>
+              <tr>
+                <td> {{ contactform.first_name }} </td>
+                <td> {{ contactform.last_name }} </td>
+              </tr>
+            </table>
+            <div>
+              <div class="spacing"> <label = for="phone_number">Phone Number</label> </div>
+              <div> {{ contactform.phone_number }} </div>
+              <div class="spacing"> <label = for="email">email</label> </div>
+              <div> {{ contactform.email }} </div>
+              <div class="spacing"> <label = for="message"> Message </label> </div>
+              <div> {{ contactform.message }} </div>
+            </div>
+            <input class="spacing" type="submit" value="Submit Form"/>
+            </fieldset>
+        </form>
+      </div>
+    </div>
 
 {% endblock %}
