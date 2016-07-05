@@ -141,3 +141,10 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 TEMPLATE_URL = '/templates/'
 MEDIA_URL = '/media/'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'CMUClubVegetarian@gmail.com'
+EMAIL_HOST_PASSWORD = 'bravelittletoaster48'
+EMAIL_USE_TLS = True

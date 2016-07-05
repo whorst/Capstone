@@ -1,0 +1,25 @@
+img{
+  max-height: 425px;
+  max-width: 275px;
+  float:right;
+}
+
+.person_container {
+  margin-top:2% !important;
+  width: 60% !important;
+  padding-bottom: 7%;
+}
+
+img{
+  padding:1px;
+  border:1px solid #021a40;
+  float: left;
+  margin-right: 1%;
+}
+
+
+.name{
+  text-align: left !important;
+  color: 		#043495 !important;
+  font-size: 2.0em;
+}
