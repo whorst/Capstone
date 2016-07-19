@@ -1,25 +1,25 @@
+.description{
+  width: 90%;
+}
+
 img{
-  max-height: 425px;
-  max-width: 275px;
   float:right;
-}
-
-.person_container {
-  margin-top:2% !important;
-  width: 60% !important;
-  padding-bottom: 7%;
-}
-
-img{
-  padding:1px;
+  /*padding:1px;*/
   border:1px solid #021a40;
   float: left;
   margin-right: 1%;
 }
 
-
 .name{
   text-align: left !important;
   color: 		#043495 !important;
-  font-size: 2.0em;
+  font-size: 1.5em !important;
 }
+
+.person_container {
+  margin-top:3% !important;
+  width: 60% !important;
+}
+/*.description{
+  height: 400px;
+}*/

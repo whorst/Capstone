@@ -14,7 +14,8 @@
     <p class="title">Contact Us</p>
     <p class="main_text">Have any questions, comments, or concerns? Fill out the relevant information and we'l get back to you as soon as we can!</p>
   </div>
-    <div class="outer main_text">
+    <div class="of_body">
+    <div class="outer main_text of_body">
       <div class="form_container">
         <form method="POST" action="">
           <!--Prevents attacks from cross site request forgery scipts -->
@@ -30,19 +31,32 @@
                 <td> {{ contactform.first_name }} </td>
                 <td> {{ contactform.last_name }} </td>
               </tr>
+              <tr>
+                <td>{{contactform.first_name.errors}}</td>
+                <td>{{contactform.last_name.errors}}</td>
+              </tr>
             </table>
             <div>
               <div class="spacing"> <label = for="phone_number">Phone Number</label> </div>
-              <div> {{ contactform.phone_number }} </div>
+              <div maxlength = "12"> {{ contactform.phone_number }} </div>
+              <div> {{contactform.phone_number.errors}} </div>
+
               <div class="spacing"> <label = for="email">email</label> </div>
               <div> {{ contactform.email }} </div>
+              <div> {{ contactform.email.errors }} </div>
+
               <div class="spacing"> <label = for="message"> Message </label> </div>
               <div> {{ contactform.message }} </div>
+              <div> {{ contactform.message.errors }} </div>
+
+
             </div>
             <input class="spacing" type="submit" value="Submit Form"/>
             </fieldset>
         </form>
       </div>
+      {{contactform.errors}}
     </div>
 
 {% endblock %}
+</div>

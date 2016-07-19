@@ -12,5 +12,7 @@ urlpatterns = [
     url(r'^home/', include('announcement.urls')),
     url(r'^contact/', include('contact_form.urls')),
     url(r'^meet/', include('meet.urls')),
+    url(r'^about/', include('about.urls')),
+    url(r'^dining/', include('dining.urls')),
     url(r'^$', RedirectView.as_view(url='/home/', permanent=True)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

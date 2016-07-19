@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'announcement',
     'contact_form',
     'meet',
+    'about',
+    'dining',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -111,9 +113,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 #TEMPLATE_DIRS = os.path.normpath(os.path.join(BASE_DIR, 'templates'),)
-
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -132,6 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_online')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),

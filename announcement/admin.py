@@ -19,8 +19,8 @@ class AnnouncementForm(forms.ModelForm):
 
     def clean_title(self):
         title = self.cleaned_data.get("title")
-        if (bool(re.match(r"[\w ]{3,}$", title)) == False):
-            raise ValidationError("Your title isn't long enough")
+        # if (bool(re.match(r"[\w ]{3,}$", title)) == False):
+        #     raise ValidationError("Your title isn't long enough")
         return title
 
 

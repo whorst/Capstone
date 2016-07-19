@@ -1,18 +1,47 @@
 /*This provides all of the CSS for the home.html file*/
 .announcement_container{
-
   padding-top:2%;
   width:60%;
   margin: 0 auto;
   text-align:center;
   padding-bottom:50%;
-
 }
 
 .container{
-
-  padding-top:3%;
+  margin-top:3%;
   width:100%;
   text-align:center;
+}
 
+
+
+#fb{
+
+  float:right;
+  padding-right:15%;
+}
+
+#instagram{
+  
+  float:left;
+  padding-left: 15%;
+}
+
+#insta{
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background-size: 400px 400px;
+  background-image: url("SAVV.jpg") !important;
+  /*postion: relative;*/
+}
+
+#instagram_logo{
+  width:40px;
+  height:40px;
+  bottom:0;
+  right:0;
+  margin-top: 350;
+  margin-left: 350;
+   /*position: absolute;*/
 }

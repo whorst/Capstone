@@ -6,12 +6,10 @@ fieldset div div input{
   width:100%;
 }
 
-fieldset{
-}
-
 .form_container{
   margin: 0 auto;
   width: 30%;
+  padding-top:2%;
 }
 
 input{

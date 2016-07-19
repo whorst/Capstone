@@ -3,6 +3,21 @@
 
 {% block content %}
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+
+  if (d.getElementById(id)) return;
+
+  js = d.createElement(s); js.id = id;
+
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+
+  fjs.parentNode.insertBefore(js, fjs);
+
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
@@ -21,21 +36,38 @@
 <div class="of_body">
 <div class="container">
 
-  <p class="main_text">Announcements:</p>
+  <p class="sub_title">Announcements:</p>
 
   {% for announcement in announcements %}
 
     <div style = "padding-bottom:2%;" class="announcement_container">
-
-      <p class="main_text">{{ announcement.title }}</p>
-      <p style="text-align:center; padding-bottom:3%"  class="main_text">{{ announcement.description }}</p>
-
+      <p style="text-decoration:underline;" class="main_text">{{ announcement.title }}</p>
+      <p style="text-align:center;"  class="main_text">{{ announcement.description }}</p>
     </div>
 
   {% endfor %}
 
+
+<div id="instagram">
+  <p style="border: 1px solid black;" class="sub_title"> Follow Us On Instagram! </p>
+  <div id="insta">
+    <img id="instagram_logo" src="{% static "images/instagram.png" %}">
+  </div>
 </div>
 
+
+<div id = "fb">
+  <p style="border: 1px solid black;" class="sub_title">Like Us on Facebook!</p>
+  <div style="padding-top:2px;" class="fb-page" data-href="https://www.facebook.com/savvatcmu/" data-tabs="timeline"
+    data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true"
+    data-hide-cover="false" data-show-facepile="false">
+    <blockquote cite="https://www.facebook.com/savvatcmu/" class="fb-xfbml-parse-ignore">
+    <a href="https://www.facebook.com/savvatcmu/">Student Advocates for Vegetarianism and Veganism - SAVV</a>
+    </blockquote>
+  </div>
+</div>
+
+</div>
 
 
 {% endblock %}
