@@ -13,26 +13,31 @@
   text-align:center;
 }
 
+/*td{
+  padding-left: 2%;
+  padding-right: 2%;
 
+}*/
 
-#fb{
+#ad_table{
 
-  float:right;
-  padding-right:15%;
-}
-
-#instagram{
-  
-  float:left;
-  padding-left: 15%;
 }
 
 #insta{
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   margin: 0 auto;
-  background-size: 400px 400px;
+  background-size: 200px 200px;
   background-image: url("SAVV.jpg") !important;
+  /*postion: relative;*/
+}
+
+#orgsync{
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  background-size: 200px 200px;
+  background-image: url("OrgSync.png") !important;
   /*postion: relative;*/
 }
 
@@ -41,7 +46,7 @@
   height:40px;
   bottom:0;
   right:0;
-  margin-top: 350;
-  margin-left: 350;
+  margin-top: 80%;
+  margin-left: 80%;
    /*position: absolute;*/
 }

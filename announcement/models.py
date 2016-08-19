@@ -17,6 +17,7 @@ class Announcement(models.Model):
 Test if a unicode character saved to the database is still a unicode character when it's returned.
 Create a new announcement test object that has a unicode character in it. Save that object to the database
 (using save override?) and then grab it from the database and check it agains the original object.
+(using save override?) and then grab it from the database and check it agains the original object.
 '''
 
 '''

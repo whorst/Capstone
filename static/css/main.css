@@ -21,6 +21,8 @@
   color: 		#043495 !important;
   font-size: 1.5em !important;
   padding-top: 2%;
+  overflow: hidden;
+  white-space: nowrap;
   /*padding-bottom: 1%;*/
 }
 
